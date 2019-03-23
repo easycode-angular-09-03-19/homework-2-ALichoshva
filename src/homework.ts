@@ -70,7 +70,7 @@ namespace USA {
 }
 
 namespace Ukraine {
-    export interface INews2 {
+    export interface INews {
         uuid: string;
         title: string;
         body: string;
@@ -79,7 +79,7 @@ namespace Ukraine {
         imgUrl: string;
     }
     
-    export class NewsService2 {
+    export class NewsService {
         protected apiurl: string = 'https://news_api_2_url';
         public getNews() {}; // method get all news
         public addToFavorite() {}; // method add to favorites
@@ -88,21 +88,21 @@ namespace Ukraine {
 
 // task 4
 class Junior {
-    doTasks() {
+    public doTasks() {
         console.log('Actions!!!');
     }
 }
 
 class Middle {
-    createApp() {
+    public createApp() {
         console.log('Creating!!!');
     }
 }
 
 class Senior implements Junior, Middle {
-    doTasks: () => void;
-    createApp: () => void;
-    createArchitecture() {
+    public doTasks: () => void;
+    public createApp: () => void;
+    public createArchitecture() {
         console.log('Mixin!!!')
     };
 }
